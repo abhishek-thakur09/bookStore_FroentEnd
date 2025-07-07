@@ -1,0 +1,2 @@
+export const BACKGROUND_Image = "https://images.unsplash.com/photo-1604866830893-c13cafa515d5?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+export const Google_Logo = "https://w7.pngwing.com/pngs/326/85/png-transparent-google-logo-google-text-trademark-logo.png"
