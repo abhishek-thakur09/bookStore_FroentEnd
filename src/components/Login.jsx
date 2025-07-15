@@ -3,7 +3,6 @@ import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { BACKGROUND_Image } from "../utils/constants";
 import GoogleLogin from "./GoogleLogin";
-import Home from "./Home";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -84,7 +83,7 @@ const Login = () => {
 
         <p className="p-4 cursor-pointer" onClick={toggleSignin}>
           {isSignInForm
-            ? "New to Netflix? Sign Up Now"
+            ? "New to Bookrey? Sign Up Now"
             : "Already have an account, Sign In now"}
         </p>
 

@@ -26,6 +26,29 @@ const GoogleLogin = ({ onclick }) => {
       
       console.log("🪪 Token:", token);
 
+
+      // Prepare user data to send to backend
+      const userData = {
+        uid: user.uid,
+        email: user.email,
+        displayName: user.displayName,
+        photoURL: user.photoURL, // Optional: user's profile picture
+        token: token,
+      };
+
+      // Send user data to backend
+      const response = await fetch("http://localhost:9999/api/auth/google", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+
+      const data = await response.json();
+      console.log("Backend response:", data);
+
+      
       if (typeof onclick === "function") {
         onclick(); // ✅ Now this will work correctly
       } else {
